@@ -32,4 +32,11 @@ jphennessey,  14 June 2017
 - git clone https://github.com/jphennessey/magic-leap-load-performance-assignment.git
 - mvn clean compile
 - mvn test 
-- open output/report.html
+- open output/LoadTimePlot.jpeg
+- open output/LoadTimeStats.jpeg
+
+### Sample reports:
+- Load Time Line Graph
+![Load Time Line Graph report missing](../master/output/LoadTimePlot.jpeg)
+- Load Time Statistics
+![Load Time Statistics report missing](../master/output/LoadTimeStats.jpeg)
