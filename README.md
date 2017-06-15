@@ -38,5 +38,6 @@ jphennessey,  14 June 2017
 ### Sample reports:
 - Load Time Line Graph
 ![Load Time Line Graph report missing](../master/output/LoadTimePlot.jpeg)
+------------------------------------------------------------------------------------
 - Load Time Statistics
 ![Load Time Statistics report missing](../master/output/LoadTimeStats.jpeg)
