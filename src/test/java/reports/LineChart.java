@@ -15,15 +15,15 @@ import java.io.IOException;
 public class LineChart {
     public static void createLineChart(DefaultCategoryDataset lineChart) {
         JFreeChart chartObject = ChartFactory.createLineChart(
-                "www.magicleap.com Load Time Latency","Load Number",
+                "www.magicleap.com Load Time Latency", "Load Number",
                 "Load Time (ms)",
                 lineChart, PlotOrientation.HORIZONTAL,
-                true,true,false);
+                true, true, false);
         int width = 900;
         int height = 1300;
-        File lineChart1 = new File( "output/LoadTimePlot.jpeg" );
+        File lineChart1 = new File("output/LoadTimePlot.jpeg");
         try {
-            ChartUtilities.saveChartAsJPEG(lineChart1 ,chartObject, width ,height);
+            ChartUtilities.saveChartAsJPEG(lineChart1, chartObject, width, height);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -15,15 +15,15 @@ import java.io.IOException;
 public class BarChart {
     public static void createBarChart(DefaultCategoryDataset barChart) {
         JFreeChart chartObject = ChartFactory.createBarChart(
-                "www.magicleap.com Load Time Latency Statistics","Statistic",
+                "www.magicleap.com Load Time Latency Statistics", "Statistic",
                 "Load Time (ms)",
                 barChart, PlotOrientation.VERTICAL,
-                false,true,false);
+                false, true, false);
         int width = 640;
         int height = 480;
-        File barChartFile = new File( "output/LoadTimeStats.jpeg" );
+        File barChartFile = new File("output/LoadTimeStats.jpeg");
         try {
-            ChartUtilities.saveChartAsJPEG(barChartFile, chartObject, width ,height);
+            ChartUtilities.saveChartAsJPEG(barChartFile, chartObject, width, height);
         } catch (IOException e) {
             e.printStackTrace();
         }

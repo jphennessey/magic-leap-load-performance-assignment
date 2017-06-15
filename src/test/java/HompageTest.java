@@ -31,7 +31,7 @@ public class HompageTest {
 
         DefaultCategoryDataset lineChart = new DefaultCategoryDataset();
         Stopwatch stopwatch = Stopwatch.createUnstarted();
-        for (int i=1; i<=iterations; i++) {
+        for (int i = 1; i <= iterations; i++) {
             WebDriver driver = Chrome.createDriver();
 
             stopwatch.start();
@@ -40,10 +40,14 @@ public class HompageTest {
             stopwatch.stop();
 
             long loadTime = stopwatch.elapsed(TimeUnit.MILLISECONDS);
-            lineChart.addValue( loadTime , "Load Time" , String.valueOf(i) );
+            lineChart.addValue(loadTime, "Load Time", String.valueOf(i));
             totalTime += loadTime;
-            if (loadTime > maxTime) {maxTime = loadTime;}
-            if (loadTime < minTime) {minTime = loadTime;}
+            if (loadTime > maxTime) {
+                maxTime = loadTime;
+            }
+            if (loadTime < minTime) {
+                minTime = loadTime;
+            }
             stopwatch.reset();
             driver.quit();
         }
